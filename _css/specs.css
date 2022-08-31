@@ -1,0 +1,28 @@
+@charset "UTF-8"
+
+section#conteudo {
+	width: 1000px;
+	height: auto;
+}
+
+iframe#frame-spec {
+	width: 380px;
+	height: 280px;
+	border: none;
+	overflow: hidden; /* proibe a utilizacao (uso) da barra de rolagem (nao funciona em todos os navegadores)*/
+
+}
+
+/*
+iframe#frame-spec: after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+*/
+iframe#frame-spec::-webkit-scrollbar {
+	display: none; /* esconde a barra de rolagem */
+}
